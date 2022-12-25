@@ -113,7 +113,7 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-AllTests" title="pages.TestClass" class="method navigator-link" hash-for-method="ksaValidations">ksaValidations</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-AllTests" title="pages.TestClass" class="method navigator-link" hash-for-method="ksaValidations(LITE, From 15 SAR/month, CLASSIC, From 25 SAR/month, PREMIUM, 60 SAR/month)">ksaValidations(LITE, From 15 SAR/month, CLASSIC, From 25 SAR/month, PREMIUM, 60 SAR/month)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-AllTests -->
@@ -150,9 +150,10 @@
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="ksaValidations">
-                  </a> <!-- ksaValidations -->
+                  <a name="ksaValidations(LITE, From 15 SAR/month, CLASSIC, From 25 SAR/month, PREMIUM, 60 SAR/month)">
+                  </a> <!-- ksaValidations(LITE, From 15 SAR/month, CLASSIC, From 25 SAR/month, PREMIUM, 60 SAR/month) -->
                   <span class="method-name">ksaValidations</span>
+                  <span class="parameters">(LITE,From 15 SAR/month,CLASSIC,From 25 SAR/month,PREMIUM,60 SAR/month)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -160,13 +161,19 @@
         </div> <!-- panel AllTests -->
         <div panel-name="test-xml-AllTests" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">/Users/dhruvchopra/eclipse-workspace/stctvackage-automationPOM/src/test/resources/TestSuites/TestNG.xml</span>
+            <span class="header-content">/Users/dhruvchopra/git/stctv/stctvackage-automationPOM/src/test/resources/TestSuites/TestNG.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite name=&quot;AllTests&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;parameter name=&quot;ExpectedTextPlanClassic&quot; value=&quot;CLASSIC&quot;/&gt;
+  &lt;parameter name=&quot;ExpectedCPPlanPremium&quot; value=&quot;60 SAR/month&quot;/&gt;
+  &lt;parameter name=&quot;ExpectedCPPlanClassic&quot; value=&quot;From 25 SAR/month&quot;/&gt;
+  &lt;parameter name=&quot;ExpectedTextPlanPremium&quot; value=&quot;PREMIUM&quot;/&gt;
+  &lt;parameter name=&quot;ExpectedCPPlanLite&quot; value=&quot;From 15 SAR/month&quot;/&gt;
+  &lt;parameter name=&quot;ExpectedTextPlanLite&quot; value=&quot;LITE&quot;/&gt;
   &lt;listeners&gt;
     &lt;listener class-name=&quot;listener.ListenerTests&quot;/&gt;
   &lt;/listeners&gt;
@@ -214,17 +221,17 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(3);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'BahrainValidation')
+data.setCell(0, 1, 'KuwaitValidation')
 data.setCell(0, 2, 'pages.TestClass')
-data.setCell(0, 3, 32195);
+data.setCell(0, 3, 29774);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'KuwaitValidation')
+data.setCell(1, 1, 'BahrainValidation')
 data.setCell(1, 2, 'pages.TestClass')
-data.setCell(1, 3, 29607);
+data.setCell(1, 3, 28958);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'ksaValidations')
 data.setCell(2, 2, 'pages.TestClass')
-data.setCell(2, 3, 23261);
+data.setCell(2, 3, 23331);
 window.suiteTableData['AllTests']= { tableData: data, tableDiv: 'times-div-AllTests'}
 return data;
 }
@@ -261,36 +268,36 @@ return data;
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">BahrainValidation</span>
-                <span class="method-start">7617 ms</span>
+                <span class="method-name">ksaValidations(LITE, From 15 SAR/month, CLASSIC, From 25 SAR/month, PREMIUM, 60 SAR/month)</span>
+                <span class="method-start">6913 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">QuitDriver</span>
-                <span class="method-start">39820 ms</span>
+                <span class="method-start">30251 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">StartDriver</span>
-                <span class="method-start">39941 ms</span>
+                <span class="method-start">30369 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">BahrainValidation</span>
+                <span class="method-start">35118 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">QuitDriver</span>
+                <span class="method-start">64079 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">StartDriver</span>
+                <span class="method-start">64192 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">KuwaitValidation</span>
-                <span class="method-start">44729 ms</span>
+                <span class="method-start">69457 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">QuitDriver</span>
-                <span class="method-start">74340 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">StartDriver</span>
-                <span class="method-start">74454 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">ksaValidations</span>
-                <span class="method-start">79778 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">QuitDriver</span>
-                <span class="method-start">103042 ms</span>
+                <span class="method-start">99236 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

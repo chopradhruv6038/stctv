@@ -39,7 +39,7 @@ public class TestClass extends BaseTest {
 		System.out.println("KSA Actual Currency and price for LITE Account :" + ActualCPPlanLite + "\n"
 				+ "KSA Expected Currency and price for LITE Account :" + ExpectedCPPlanLitee + "\n");
 
-		// Classic
+		// Classic package
 
 		String ActualTPlanClassic = ksapage.getAttributePlanClassic();
 
@@ -59,7 +59,7 @@ public class TestClass extends BaseTest {
 		System.out.println("KSA Actual Currency and price for ClASSIC Account :" + ActualCPPlanClassic + "\n"
 				+ "KSA Expected Currency and price for ClASSIC Account :" + ExpectedCPPlanClassicc + "\n");
 
-		// Premium
+		// Premium pacckage
 
 		String ActualTPlanPremium = ksapage.getAttributePlanPremium();
 
@@ -92,7 +92,7 @@ public class TestClass extends BaseTest {
 
 		bahrainpage.clickBahrainbtn();
 
-		// Lite
+		// Lite package
 
 		String ActualTextPlanLite = bahrainpage.getAttributePlanLite();
 
@@ -112,7 +112,7 @@ public class TestClass extends BaseTest {
 		System.out.println("Bahrain Actual Currency and price for Lite Account :" + ActualCPPlanLite + "\n"
 				+ "Bahrain Expected Currency and price for Lite Account :" + ExpectedCPPlanLite + "\n");
 
-		// Classic
+		// Classic package
 
 		String ActualTPlanClassic = bahrainpage.getAttributePlanClassic();
 
@@ -132,7 +132,7 @@ public class TestClass extends BaseTest {
 		System.out.println("Bahrain Actual Currency and price for Classic Account :" + ActualCPPlanClassic + "\n"
 				+ "Bahrain Expected Currency and price for Classic Account :" + ExpectedCPPlanClassic + "\n");
 
-		// Premium
+		// Premium package
 
 		String ActualTPlanPremium = bahrainpage.getAttributePlanPremium();
 
@@ -165,7 +165,7 @@ public class TestClass extends BaseTest {
 
 		kuwaitpage.clickKuwaitbtn();
 
-		// Lite
+		// Lite package
 
 		String ActualTextPlanLite = kuwaitpage.getAttributePlanLite();
 
@@ -188,7 +188,7 @@ public class TestClass extends BaseTest {
 
 		String ActualTPlanClassic = kuwaitpage.getAttributePlanClassic();
 
-		// Classic
+		// Classic package
 
 		String ExpectedTextPlanClassic = "CLASSIC";
 
@@ -206,7 +206,7 @@ public class TestClass extends BaseTest {
 		System.out.println("Kuwait Actual Currency and price for Classic Account :" + ActualCPPlanClassic + "\n"
 				+ "Kuwait Expected Currency and price for Classic Account :" + ExpectedCPPlanClassic + "\n");
 
-		// Premium
+		// Premium package
 
 		String ActualTPlanPremium = kuwaitpage.getAttributePlanPremium();
 

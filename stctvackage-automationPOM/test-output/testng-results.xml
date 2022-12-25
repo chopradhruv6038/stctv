@@ -2,44 +2,76 @@
 <testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-12-25T16:01:07 GST" name="AllTests" finished-at="2022-12-25T16:02:50 GST" duration-ms="103196">
+  <suite started-at="2022-12-25T20:14:46 GST" name="AllTests" finished-at="2022-12-25T20:16:25 GST" duration-ms="99402">
     <groups>
     </groups>
-    <test started-at="2022-12-25T16:01:07 GST" name="AutomationOfSCTV" finished-at="2022-12-25T16:02:50 GST" duration-ms="103196">
+    <test started-at="2022-12-25T20:14:46 GST" name="AutomationOfSCTV" finished-at="2022-12-25T20:16:25 GST" duration-ms="99402">
       <class name="pages.TestClass">
-        <test-method is-config="true" signature="StartDriver()[pri:0, instance:pages.TestClass@4facf68f]" started-at="2022-12-25T16:01:07 GST" name="StartDriver" finished-at="2022-12-25T16:01:14 GST" duration-ms="7614" status="PASS">
+        <test-method is-config="true" signature="StartDriver()[pri:0, instance:pages.TestClass@39529185]" started-at="2022-12-25T20:14:46 GST" name="StartDriver" finished-at="2022-12-25T20:14:53 GST" duration-ms="6910" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- StartDriver -->
-        <test-method signature="BahrainValidation()[pri:0, instance:pages.TestClass@4facf68f]" started-at="2022-12-25T16:01:14 GST" name="BahrainValidation" finished-at="2022-12-25T16:01:46 GST" duration-ms="32195" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- BahrainValidation -->
-        <test-method is-config="true" signature="QuitDriver()[pri:0, instance:pages.TestClass@4facf68f]" started-at="2022-12-25T16:01:46 GST" name="QuitDriver" finished-at="2022-12-25T16:01:47 GST" duration-ms="119" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- QuitDriver -->
-        <test-method is-config="true" signature="StartDriver()[pri:0, instance:pages.TestClass@4facf68f]" started-at="2022-12-25T16:01:47 GST" name="StartDriver" finished-at="2022-12-25T16:01:51 GST" duration-ms="4788" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- StartDriver -->
-        <test-method signature="KuwaitValidation()[pri:0, instance:pages.TestClass@4facf68f]" started-at="2022-12-25T16:01:51 GST" name="KuwaitValidation" finished-at="2022-12-25T16:02:21 GST" duration-ms="29607" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- KuwaitValidation -->
-        <test-method is-config="true" signature="QuitDriver()[pri:0, instance:pages.TestClass@4facf68f]" started-at="2022-12-25T16:02:21 GST" name="QuitDriver" finished-at="2022-12-25T16:02:21 GST" duration-ms="113" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- QuitDriver -->
-        <test-method is-config="true" signature="StartDriver()[pri:0, instance:pages.TestClass@4facf68f]" started-at="2022-12-25T16:02:21 GST" name="StartDriver" finished-at="2022-12-25T16:02:26 GST" duration-ms="5324" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- StartDriver -->
-        <test-method signature="ksaValidations()[pri:1, instance:pages.TestClass@4facf68f]" started-at="2022-12-25T16:02:26 GST" name="ksaValidations" finished-at="2022-12-25T16:02:50 GST" duration-ms="23261" status="PASS">
+        <test-method signature="ksaValidations(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:-1, instance:pages.TestClass@39529185]" started-at="2022-12-25T20:14:53 GST" name="ksaValidations" finished-at="2022-12-25T20:15:16 GST" duration-ms="23331" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[LITE]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[From 15 SAR/month]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[CLASSIC]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[From 25 SAR/month]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[PREMIUM]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[60 SAR/month]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ksaValidations -->
-        <test-method is-config="true" signature="QuitDriver()[pri:0, instance:pages.TestClass@4facf68f]" started-at="2022-12-25T16:02:50 GST" name="QuitDriver" finished-at="2022-12-25T16:02:50 GST" duration-ms="112" status="PASS">
+        <test-method is-config="true" signature="QuitDriver()[pri:0, instance:pages.TestClass@39529185]" started-at="2022-12-25T20:15:16 GST" name="QuitDriver" finished-at="2022-12-25T20:15:16 GST" duration-ms="115" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- QuitDriver -->
+        <test-method is-config="true" signature="StartDriver()[pri:0, instance:pages.TestClass@39529185]" started-at="2022-12-25T20:15:16 GST" name="StartDriver" finished-at="2022-12-25T20:15:21 GST" duration-ms="4749" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- StartDriver -->
+        <test-method signature="BahrainValidation()[pri:0, instance:pages.TestClass@39529185]" started-at="2022-12-25T20:15:21 GST" name="BahrainValidation" finished-at="2022-12-25T20:15:50 GST" duration-ms="28958" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BahrainValidation -->
+        <test-method is-config="true" signature="QuitDriver()[pri:0, instance:pages.TestClass@39529185]" started-at="2022-12-25T20:15:50 GST" name="QuitDriver" finished-at="2022-12-25T20:15:50 GST" duration-ms="112" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- QuitDriver -->
+        <test-method is-config="true" signature="StartDriver()[pri:0, instance:pages.TestClass@39529185]" started-at="2022-12-25T20:15:50 GST" name="StartDriver" finished-at="2022-12-25T20:15:55 GST" duration-ms="5265" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- StartDriver -->
+        <test-method signature="KuwaitValidation()[pri:0, instance:pages.TestClass@39529185]" started-at="2022-12-25T20:15:55 GST" name="KuwaitValidation" finished-at="2022-12-25T20:16:25 GST" duration-ms="29774" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- KuwaitValidation -->
+        <test-method is-config="true" signature="QuitDriver()[pri:0, instance:pages.TestClass@39529185]" started-at="2022-12-25T20:16:25 GST" name="QuitDriver" finished-at="2022-12-25T20:16:25 GST" duration-ms="112" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- QuitDriver -->
