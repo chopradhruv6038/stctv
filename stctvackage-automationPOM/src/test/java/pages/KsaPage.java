@@ -7,6 +7,13 @@ import Base.BasePage;
 
 public class KsaPage extends BasePage {
 
+	public KsaPage(WebDriver driver) {
+		super(driver);
+
+	}
+	
+	private By EnglishLinkTextBtn = By.linkText("English");
+	
 	private By LITETypePlan = By.xpath("/html//strong[@id='lite']");
 
 	private By ActualCurrencyPricePlanLite = By.xpath("/html//div[@id='lite_tierCurrency']");
@@ -19,10 +26,28 @@ public class KsaPage extends BasePage {
 
 	private By ActualCurrencyPricePlanPremium = By.xpath("/html//div[@id='premium_tierCurrency']");
 
-	public KsaPage(WebDriver driver) {
-		super(driver);
+
+	
+	
+
+	public KsaPage load() {
+
+		loadurl("/");
+		
+		return this;
 
 	}
+	
+	
+	public KsaPage clickEnglishbtn() {
+
+		driver.findElement(EnglishLinkTextBtn).click();
+
+		return new KsaPage(driver);
+	}
+
+	
+	
 
 	public String getAttributePlanLite() {
 

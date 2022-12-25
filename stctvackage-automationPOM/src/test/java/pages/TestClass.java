@@ -1,80 +1,83 @@
 package pages;
 
 import org.testng.Assert;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import Base.BaseTest;
 
 public class TestClass extends BaseTest {
+	@Parameters({ "ExpectedTextPlanLite", "ExpectedCPPlanLite", "ExpectedTextPlanClassic", "ExpectedCPPlanClassic",
 
-	@Test(priority = 1)
-	public void ksaValidations() {
+			"ExpectedTextPlanPremium", "ExpectedCPPlanPremium" })
+	@Test(priority = -1)
+	public void ksaValidations(String ExpectedTextPlanLite, String ExpectedCPPlanLite, String ExpectedTextPlanClassic,
 
-		HomePage homepage = new HomePage(driver).load();
+			String ExpectedCPPlanClassic, String ExpectedTextPlanPremium, String ExpectedCPPlanPremium) {
 
-		homepage.clickEnglishbtn();
+		KsaPage ksapage = new KsaPage(driver).load();
 
-		KsaPage ksapage = new KsaPage(driver);
+		ksapage.clickEnglishbtn();
 
-		// Lite
+		// Lite package
 
 		String ActualTextPlanLite = ksapage.getAttributePlanLite();
 
-		String ExpectedTextPlanLite = "LITE";
+		String ExpectedTextPlanLitee = ExpectedTextPlanLite;
 
 		Assert.assertEquals(ActualTextPlanLite, ExpectedTextPlanLite);
 
 		System.out.println("KSA Actual Plan Type :" + ActualTextPlanLite + "\n" + "KSA Expected Plan type :"
-				+ ExpectedTextPlanLite + "\n");
+				+ ExpectedTextPlanLitee + "\n");
 
 		String ActualCPPlanLite = ksapage.getAttributePriceandCurrencyLite();
 
-		String ExpectedCPPlanLite = "From 15 SAR/month";
+		String ExpectedCPPlanLitee = ExpectedCPPlanLite;
 
 		Assert.assertEquals(ActualCPPlanLite, ExpectedCPPlanLite);
 
 		System.out.println("KSA Actual Currency and price for LITE Account :" + ActualCPPlanLite + "\n"
-				+ "KSA Expected Currency and price for LITE Account :" + ExpectedCPPlanLite + "\n");
+				+ "KSA Expected Currency and price for LITE Account :" + ExpectedCPPlanLitee + "\n");
 
 		// Classic
 
 		String ActualTPlanClassic = ksapage.getAttributePlanClassic();
 
-		String ExpectedTextPlanClassic = "CLASSIC";
+		String ExpectedTextPlanClassicc = ExpectedTextPlanClassic;
 
 		Assert.assertEquals(ActualTPlanClassic, ExpectedTextPlanClassic);
 
 		System.out.println("KSA Actual Plan Type :" + ActualTPlanClassic + "\n" + "KSA Expected Plan type :"
-				+ ExpectedTextPlanClassic + "\n");
+				+ ExpectedTextPlanClassicc + "\n");
 
 		String ActualCPPlanClassic = ksapage.getAttributePriceandCurrencyClassic();
 
-		String ExpectedCPPlanClassic = "From 25 SAR/month";
+		String ExpectedCPPlanClassicc = ExpectedCPPlanClassic;
 
 		Assert.assertEquals(ActualCPPlanClassic, ExpectedCPPlanClassic);
 
 		System.out.println("KSA Actual Currency and price for ClASSIC Account :" + ActualCPPlanClassic + "\n"
-				+ "KSA Expected Currency and price for ClASSIC Account :" + ExpectedCPPlanClassic + "\n");
+				+ "KSA Expected Currency and price for ClASSIC Account :" + ExpectedCPPlanClassicc + "\n");
 
 		// Premium
 
 		String ActualTPlanPremium = ksapage.getAttributePlanPremium();
 
-		String ExpectedTextPlanPremium = "PREMIUM";
+		String ExpectedTextPlanPremiumm = ExpectedTextPlanPremium;
 
 		Assert.assertEquals(ActualTPlanPremium, ExpectedTextPlanPremium);
 
 		System.out.println("KSA Actual Plan Type :" + ActualTPlanPremium + "\n" + "KSA Expected Plan type :"
-				+ ExpectedTextPlanPremium + "\n");
+				+ ExpectedTextPlanPremiumm + "\n");
 
 		String ActualCPPlanPremium = ksapage.getAttributePriceandCurrencyPremium();
 
-		String ExpectedCPPlanPremium = "60 SAR/month";
+		String ExpectedCPPlanPremiumm = ExpectedCPPlanPremium;
 
 		Assert.assertEquals(ActualCPPlanPremium, ExpectedCPPlanPremium);
 
 		System.out.println("KSA Actual Currency and price for PREMIUM Account :" + ActualCPPlanPremium + "\n"
-				+ "KSA Expected Currency and price for PREMIUM Account :" + ExpectedCPPlanPremium + "\n");
+				+ "KSA Expected Currency and price for PREMIUM Account :" + ExpectedCPPlanPremiumm + "\n");
 
 	}
 

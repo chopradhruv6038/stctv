@@ -1,5 +1,17 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="AllTests" verbose="1">
+	
+	<parameter name="ExpectedTextPlanLite" value="LITE"></parameter>
+		<parameter name="ExpectedCPPlanLite" value="From 15 SAR/month"></parameter>
+			<parameter name="ExpectedTextPlanClassic" value="CLASSIC"></parameter>
+				<parameter name="ExpectedCPPlanClassic" value="From 25 SAR/month"></parameter>
+					<parameter name="ExpectedTextPlanPremium" value="PREMIUM"></parameter>
+						<parameter name="ExpectedCPPlanPremium" value="60 SAR/month"></parameter>
+							
+	
+	
+	
+	
 	<listeners>
 		<listener class-name="listener.ListenerTests"></listener>
 	</listeners>
